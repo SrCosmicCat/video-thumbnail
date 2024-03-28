@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Inicio</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+    <body>
+        <h1>Youtube Thumbnail Tester</h1>
+        <div class="main">
+            <div class="yt-page" id="yt-page"></div>
+            <div class="thumbnail-container">
+                <div class="video-form">
+                    <h2>Options</h2>
+                    <label>
+                        Videos
+                        <input type="range" name="numberThumbs" id="numberThumbs" min="1" max="8" value="6">
+                        <span class="counter">6</span>
+                    </label>
+                    <label>
+                        Name
+                        <input type="text" name="videoName" id="videoName" placeholder="Video name" maxlength="100">
+                    </label>
+                    <label>
+                        Channel
+                        <input type="text" name="channelName" id="channelName" placeholder="Channel name" maxlength="25">
+                    </label>
+                    <label>
+                        Channel image
+                        <div class="channel-image-add">
+                            +    
+                            <input type="file" name="channelImage" id="channelImage" accept="image/png, image/jpeg">
+                        </div>
+                    </label>
+                </div>
+                
+                <hr style="width: 100%;">
+
+                <h2>Thumbnails</h2>
+                <div class="thumbnail">
+                    <img src="./img/thumbs/1.webp" alt="" draggable="false">
+                </div>
+                <div class="thumbnail">
+                    <img src="./img/thumbs/2.webp" alt="" draggable="false">
+                </div>
+                <div class="thumbnail">
+                    <img src="./img/thumbs/3.webp" alt="" draggable="false">
+                </div>
+                <label class="thumbnail-add">
+                    +
+                    <input type="file" name="thumbnailAdd" id="thumbnailAdd" accept="image/png, image/jpeg">
+                </label>
+            </div>
+        </div>
+    </body>
+</html>

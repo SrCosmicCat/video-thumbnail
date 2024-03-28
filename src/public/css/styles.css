@@ -1,0 +1,244 @@
+:root {
+    --background: #0F0F0F;
+    --white: #FAFEFF;
+    --gray: #8A8A8A;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(../font/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto-Medium', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--white);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 250px;
+    min-width: 250px;
+    max-height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+.video-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.video-form input {
+    width: 100%;
+    margin: 0;
+}
+
+label {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Desactivar la apariencia predeterminada en WebKit (Chrome, Safari) */
+    appearance: none; /* Desactivar la apariencia predeterminada en otros navegadores */
+    width: 100%; /* Ancho completo del contenedor */
+    height: 15px; /* Altura de la barra de rango */
+    background-color: transparent;
+    margin: 10px 0; /* Margen superior e inferior para separar del resto del contenido */
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 100%; /* Altura de la barra de rango */
+    background-color: var(--gray); /* Color del riel de la barra de rango */
+    border-radius: 50px; /* Bordes redondeados */
+  }
+  
+/* Estilo del control deslizante */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Desactivar la apariencia predeterminada en WebKit (Chrome, Safari) */
+    width: 15px; /* Ancho del control deslizante */
+    height: 15px; /* Altura del control deslizante */
+    background-color: var(--white); /* Color del control deslizante */
+    border-radius: 50%; /* Hacer el control deslizante circular */
+    border: none; /* Borde blanco alrededor del control deslizante */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el control deslizante */
+     /* Ajustar la posición vertical del control deslizante */
+}
+
+.video-form [type="text"] {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: 1px solid var(--gray);
+    background-color: transparent;
+    color: var(--white);
+}
+
+
+
+.thumbnail img {
+    width: 180px;
+    border-radius: 5px;
+}
+
+.channel-image-add {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    outline: 2px dashed var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--gray);
+    cursor: pointer;
+}
+
+.yt-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    max-width: 1230px;
+    min-width: 1230px;
+    max-height: 80vh;
+    column-gap: 15px;
+    row-gap: 30px;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    transition: opacity 0.5s ease;
+}
+
+.yt-page::-webkit-scrollbar, .thumbnail-container::-webkit-scrollbar  {
+    width: 7px;
+    background: transparent;
+}
+.yt-page::-webkit-scrollbar-thumb, .thumbnail-container::-webkit-scrollbar-thumb  {
+    background-color: var(--gray);
+    border-radius: 50px;
+}
+
+.yt-thumbnail {
+    height: 225px;
+    width: 400px;
+}
+
+.yt-thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+label.thumbnail-add {
+    width: 180px;
+    min-height: 101.25px;
+    border-radius: 5px;
+    outline: 2px dashed var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--gray);
+    cursor: pointer;
+}
+
+.yt-info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    max-width: 380px;
+    overflow: hidden;
+}
+
+.yt-channel-img {
+    height: 36px;
+    width: 36px;
+    min-height: 36px;
+    min-width: 36px;
+    border-radius: 50%;
+    overflow: hidden;   
+}
+
+.yt-channel-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.yt-video-details {
+    max-height: 100%;
+    text-wrap: pretty;
+}
+
+.yt-video-details h3{
+    font-size: 1rem;
+    font-weight: 500;
+    overflow: hidden;
+    margin-bottom: 6px;
+    max-height: 44px;
+}
+
+.yt-video-details p {
+    font-size: 0.9rem;
+    font-family: 'Roboto-Regular', Arial, sans-serif;
+    color: var(--gray);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    line-height: 1.2em;
+}
+
+.yt-video-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}

@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "thumbnail": "1.webp",
+        "title": "mrrp mrrp meow mrrp meow", 
+        "channelName": "ninerlives",
+        "channelImage": "1.jpg",
+        "views": "21 M vistas",
+        "date": "hace 2 años"
+    },
+    {
+        "id": 2,
+        "thumbnail": "2.webp",
+        "title": "Daft Punk - Something About Us (Official Video)", 
+        "channelName": "Daft Punk",
+        "channelImage": "2.jpg",
+        "views": "86 M vistas",
+        "date": "hace 14 años"
+    },
+    {
+        "id": 3,
+        "thumbnail": "3.webp",
+        "title": "Three ASEPRITE extensions you MUST have!", 
+        "channelName": "Penusbmic",
+        "channelImage": "3.jpg",
+        "views": "36 K vistas",
+        "date": "hace 5 meses"
+    },
+    {
+        "id": 4,
+        "thumbnail": "4.webp",
+        "title": "HTMX in 100 seconds", 
+        "channelName": "Firecode",
+        "channelImage": "4.jpg",
+        "views": "1 M vistas",
+        "date": "hace 6 meses"
+    },
+    {
+        "id": 5,
+        "thumbnail": "5.webp",
+        "title": "Breakcore Mix.exe",
+        "channelName": "KorroDD",
+        "channelImage": "5.jpg",
+        "views": "1.1 M vistas",
+        "date": "hace 9 meses"
+    },
+    {
+        "id": 6,
+        "thumbnail": "6.webp",
+        "title": "Cómo CAMBIAR tu ENTENDIMIENTO de la REALIDAD | ARRIVAL | Relato y Reflexiones",
+        "channelName": "Farid Dieck",
+        "channelImage": "6.jpg",
+        "views": "2 M vistas",
+        "date": "hace 5 meses"
+    },
+    {
+        "id": 7,
+        "thumbnail": "7.webp",
+        "title": "¿Cómo crear el PORTAFOLIO PERFECTO para PROGRAMADORES?",
+        "channelName": "MoureDev TV",
+        "channelImage": "7.jpg",
+        "views": "62 K vistas",
+        "date": "hace 4 semanas"
+    },
+    {
+        "id": 8,
+        "thumbnail": "8.webp",
+        "title": "Japanese soft indie/rock, that would be in Goodnight Punpun's playlist",
+        "channelName": "umekotakun",
+        "channelImage": "8.jpg",
+        "views": "5.6 M vistas",
+        "date": "hace 1 año"
+    }
+]
