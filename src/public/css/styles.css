@@ -125,7 +125,7 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 5px;
 }
 
-.channel-image-add {
+.channel-image-add div{
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -137,6 +137,14 @@ input[type="range"]::-webkit-slider-thumb {
     font-weight: 500;
     color: var(--gray);
     cursor: pointer;
+}
+
+.channel-image-add div img{
+    object-fit: cover;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 .yt-page {

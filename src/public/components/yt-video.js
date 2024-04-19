@@ -8,15 +8,6 @@ export default class Video {
         this.views = views;
         this.date = date;
     }
-
-    update({title = this.title, thumbnail = this.thumbnail, channelImage = this.channelImage, channelName = this.channelImage, views = this.views, date = this.date}) {
-        this.title = title;
-        this.thumbnail = thumbnail;
-        this.channelImage = channelImage;
-        this.channelName = channelName;
-        this.views = views;
-        this.date = date;
-    }
     
     render() {
         const video = document.createElement('article');

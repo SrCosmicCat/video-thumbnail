@@ -16,7 +16,7 @@ export default class Range {
         });
     }
 
-    change(fn) {
+    onChange(fn) {
         this.changeFN = fn;
     }
 }

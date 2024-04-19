@@ -5,7 +5,7 @@ import { randomizeArray } from '../js/array-randomizer.js';
 export const VIDEO_DEFAULT_INFO = {
     id: 0,
     title: 'Titulo del video',
-    thumbnail: 'default.png', // TODO: Poner unas por defecto XD
+    thumbnail: 'default.png',
     channelImage: 'default.png',
     channelName: 'Nombre del canal',
     views: '6 K vistas',
@@ -20,7 +20,7 @@ export default class YTPage {
         this.count;
     }
 
-    async getVideos(number = VIDEO_DEFAULT_COUNT) {
+    async loadVideos(number = VIDEO_DEFAULT_COUNT) {
         this.count = number;
         this.videos = await importJSON({
             path: '../data/thumb-info.json',
@@ -31,7 +31,7 @@ export default class YTPage {
         randomizeArray(this.videos);
     }
 
-    getMyVideo(video) {
+    loadMyVideo(video) {
         video.id = 0;
         this.videos.find((vd, i) => {
             if (vd.id === video.id) {
@@ -47,8 +47,8 @@ export default class YTPage {
                 new Video(new Video({
                     id: video.id,
                     title: video.title,
-                    thumbnail: './img/thumbs/' + video.thumbnail,
-                    channelImage: './img/channels/' + video.channelImage,
+                    thumbnail: video.id !== 0 || video.thumbnail === 'default.png' ? './img/thumbs/' + video.thumbnail : video.thumbnail,
+                    channelImage: video.id !== 0 || video.channelImage === 'default.png' ? './img/channels/' + video.channelImage : video.channelImage,
                     channelName: video.channelName,
                     views: video.views,
                     date: video.date
